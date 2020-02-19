@@ -1,5 +1,5 @@
-class AvenueSerializer < ActiveModel::Serializer
-  has_many :cameras
+#class AvenueSerializer < ActiveModel::Serializer
+#  has_many :cameras
 
-  attributes :id, :name
-end
+#  attributes :id, :name
+#end
