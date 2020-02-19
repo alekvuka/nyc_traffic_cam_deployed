@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { postRequest } from './actions/requestActions'
-import AvenueRequestForm from './Components/request/AvenueRequestForm.js'
+import AvenueRequestForm from './AvenueRequestForm.js'
 import DisplayAlert from './displayAlert.js'
 import { Redirect } from "react-router";
 
