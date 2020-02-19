@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Camera from './Components/cameras/Camera.js';
+import Camera from './Camera.js';
 import { connect } from 'react-redux'
 import Container from 'react-bootstrap/Container'
 import DisplayAlert from './displayAlert.js'
