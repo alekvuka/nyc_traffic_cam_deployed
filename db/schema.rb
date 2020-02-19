@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_01_26_010651) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "avenues", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -21,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_01_26_010651) do
   create_table "cameras", force: :cascade do |t|
     t.string "description"
     t.string "url"
-    t.integer "avenue_id"
+    t.bigint "avenue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["avenue_id"], name: "index_cameras_on_avenue_id"
