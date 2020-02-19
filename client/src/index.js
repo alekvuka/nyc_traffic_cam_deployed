@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ManageCameras from './Reducers/ManageCameras.js'
+import ManageCameras from './ManageCameras.js'
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
