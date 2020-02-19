@@ -1,0 +1,20 @@
+{
+  "name": "'nyc-traffic-cams'",
+  "version": "1.0.0",
+  "description": "traffic cameras in nyc",
+  "main": "index.js",
+  "repository": "https://github.com/alekvuka/nyc_traffic_cam_deployed.git",
+  "author": "Aleksandar Vukasinovic",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+  "engines": {
+   "yarn": "1.22.0",
+   "npm": "6.7.0",
+   "node": "11.14.0"
+  }
+}
