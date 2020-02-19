@@ -7,6 +7,8 @@ class DisplayAlert extends Component {
     this.props.redirect()
   }
 
+  
+
   render(){
     return(
       <div>
