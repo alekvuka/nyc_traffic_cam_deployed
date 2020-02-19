@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import HeaderContainer from './src/Containers/HeaderContainer.js'
 import CamerasContainer from './src/Containers/CamerasContainer.js'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import RequestContainer from '/Containers/RequestContainer.js'
+import RequestContainer from './src/Containers/RequestContainer.js'
 import HomePage from './Components/HomePage.js'
 
 class App extends Component {
