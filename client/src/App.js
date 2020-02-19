@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import HeaderContainer from './containers/headerContainer.js'
-import CamerasContainer from './containers/camerasContainer.js'
+import HeaderContainer from './Containers/headerContainer.js'
+import CamerasContainer from './Containers/camerasContainer.js'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import RequestContainer from './containers/RequestContainer.js'
-import HomePage from './components/HomePage.js'
+import RequestContainer from './Containers/RequestContainer.js'
+import HomePage from './Components/HomePage.js'
 
 class App extends Component {
 
