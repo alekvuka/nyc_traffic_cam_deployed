@@ -3,7 +3,7 @@ require 'pry'
 class CamerasController < ApplicationController
 
   def all
-    @cameras = Cameras.all
+    @cameras = Camera.all
     render json: @cameras, only: [:id, :description, :url]
   end
 

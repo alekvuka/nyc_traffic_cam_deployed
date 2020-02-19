@@ -1,5 +1,4 @@
 export const fetchAvenues = () => {
-
   return (dispatch) => {
     dispatch({ type: 'LOADING_AVENUES'})
     fetch('/avenues').then(response => {
