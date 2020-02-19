@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import AvenueOptions from '../Components/header/avenueOptions.js';
-import ResetButton from '../Components/header/ResetButton.js';
+import AvenueOptions from './Components/header/avenueOptions.js';
+import ResetButton from './Components/header/ResetButton.js';
 import { connect } from 'react-redux'
 import { fetchAvenues } from './actions/avenueActions'
 import { fetchCameras } from './actions/cameraActions'
 import {reset} from './actions/requestActions.js'
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
-import RequestButton from '../Components/header/RequestButton.js'
+import RequestButton from './Components/header/RequestButton.js'
 
 class HeaderContainer extends Component {
 
