@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import HeaderContainer from './Containers/headerContainer.js'
-import CamerasContainer from './Containers/camerasContainer.js'
+import HeaderContainer from './Containers/HeaderContainer.js'
+import CamerasContainer from './Containers/CamerasContainer.js'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import RequestContainer from './Containers/RequestContainer.js'
 import HomePage from './Components/HomePage.js'
