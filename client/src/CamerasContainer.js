@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import Camera from './Components/cameras/Camera.js';
 import { connect } from 'react-redux'
 import Container from 'react-bootstrap/Container'
-import DisplayAlert from './Components/DisplayAlert.js'
+import DisplayAlert from './Components/displayAlert.js'
+
+
 
 class CamerasContainer extends Component {
 
   constructor(props) {
+
     super(props)
     this.state = {
       cameraDeleted: ""
