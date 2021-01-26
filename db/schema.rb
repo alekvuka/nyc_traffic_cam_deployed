@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_26_010651) do
+ActiveRecord::Schema.define(version: 2020_02_21_015507) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(version: 2020_01_26_010651) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "books", id: :serial, force: :cascade do |t|
+    t.string "author"
+    t.string "name"
+    t.string "description"
+    t.float "rating"
+    t.string "comments"
+    t.integer "reader_id"
+    t.integer "community_id"
+    t.float "all_ratings"
+    t.float "number_of_ratings"
+  end
+
   create_table "cameras", force: :cascade do |t|
     t.string "description"
     t.string "url"
@@ -28,6 +40,18 @@ ActiveRecord::Schema.define(version: 2020_01_26_010651) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["avenue_id"], name: "index_cameras_on_avenue_id"
+  end
+
+  create_table "communities", id: :serial, force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "readers", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "username"
+    t.string "password_digest"
+    t.integer "community_id"
   end
 
   create_table "requests", force: :cascade do |t|

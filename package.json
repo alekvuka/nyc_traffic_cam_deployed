@@ -13,8 +13,8 @@
     "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
   "engines": {
-   "yarn": "1.22.0",
-   "npm": "6.7.0",
-   "node": "11.14.0"
+    "yarn": "1.22.0",
+    "npm": "6.7.0",
+    "node": "11.14.0"
   }
 }
